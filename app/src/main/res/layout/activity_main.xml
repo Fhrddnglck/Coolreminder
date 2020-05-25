@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <Button
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:id="@+id/addButton"
+        android:layout_alignParentRight="true"
+        android:text="+"
+        android:textColor="@color/white"
+        android:background="@drawable/addbutton"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Manager"
+        android:textSize="25dp"
+        android:textColor="@color/colorText"
+        android:layout_marginTop="121dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/BookCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have a 5 books"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:textColor="@color/colorText"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_marginTop="250dp"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
